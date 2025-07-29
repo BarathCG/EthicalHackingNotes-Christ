@@ -1,6 +1,6 @@
-# 🛡️ Day-04: Key Networking & Scanning Concepts – Ethical Hacking
+# Day-04: Key Networking & Scanning Concepts – Ethical Hacking
 
-## 📡 Network  
+## Network  
 A group of connected devices sharing data/resources.
 
 **Types:**  
@@ -11,7 +11,7 @@ A group of connected devices sharing data/resources.
 
 ---
 
-## 🧠 Summit  
+## Summit  
 Cybersecurity conference.  
 
 **Includes:**  
@@ -22,14 +22,14 @@ Cybersecurity conference.
 
 ---
 
-## 🔐 MAC ID  
+## MAC ID  
 Unique address for each network device  
 **Example:** 00:1A:2B:3C:4D:5E  
 Works at **OSI Layer 2**
 
 ---
 
-## 🌐 IP Address  
+## IP Address  
 Identifies devices on a network  
 
 **Types:**  
@@ -40,7 +40,7 @@ Can be **Static** or **Dynamic**
 
 ---
 
-## 🔄 TCP vs UDP
+## TCP vs UDP
 
 | Feature    | TCP | UDP |
 |------------|-----|-----|
@@ -49,13 +49,13 @@ Can be **Static** or **Dynamic**
 
 ---
 
-## 📢 Broadcast  
+## Broadcast  
 Sends packets to **all devices** on a network  
 Used in: ARP, Discovery
 
 ---
 
-## 🔁 NAT (Network Address Translation)  
+## NAT (Network Address Translation)  
 Converts **private IPs ↔ public IPs**  
 
 **Types:**  
@@ -67,7 +67,7 @@ Allows many devices to share one public IP
 
 ---
 
-## 🔂 Port Forwarding  
+## Port Forwarding  
 Redirects traffic to a specific internal device  
 Used for:  
 - Remote access  
@@ -76,7 +76,7 @@ Used for:
 
 ---
 
-## 🧩 Subnetting  
+## Subnetting  
 Breaks big networks into smaller subnets  
 Improves routing, security, IP management
 
@@ -94,7 +94,7 @@ Improves routing, security, IP management
 
 ---
 
-## 🧪 Nmap Command (Advanced Scan)  
+## Nmap Command (Advanced Scan)  
 nmap -T4 -A -sV -O -oN output.txt --script default -vv -p 1-1000 -sS -sT target.com
 
 **Key Flags:**  
