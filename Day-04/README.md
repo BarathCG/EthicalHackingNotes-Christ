@@ -1,75 +1,121 @@
 🛡️ Day-04: Key Networking & Scanning Concepts – Ethical Hacking
-
-
 📡 Network
 A group of connected devices sharing data/resources.
+Types:
 
-Types: LAN (wired), Wi-Fi (wireless).
+LAN (wired)
 
-Protocol: TCP/IP.
+Wi-Fi (wireless)
+
+Protocol:
+
+TCP/IP
 
 🧠 Summit
 Cybersecurity conference.
-Includes talks, live demos, CTFs, networking.
+Includes:
+
+Talks
+
+Live demos
+
+CTFs (Capture The Flag)
+
+Networking opportunities
 
 🔐 MAC ID
-Unique address for each network device (e.g. 00:1A:2B:3C:4D:5E).
-Works at OSI Layer 2.
+Unique address for each network device
+
+Example: 00:1A:2B:3C:4D:5E
+
+Works at OSI Layer 2
 
 🌐 IP Address
-Identifies devices on a network.
-Types: IPv4 (e.g. 192.168.1.1), IPv6.
-Can be static or dynamic.
+Identifies devices on a network
 
-🔄 TCP vs UDP
-Protocol	Connection	Reliable?
-TCP	Yes	Yes
-UDP	No	No
+Types:
+
+IPv4 → Example: 192.168.1.1
+
+IPv6
+
+Can be Static or Dynamic
+
+🔄 TCP vs UDP Protocol
+Feature	TCP	UDP
+Connection	Yes	No
+Reliable	Yes	No
 
 📢 Broadcast
-Sends packets to all devices in a network.
-Used in ARP, discovery.
+Sends packets to all devices in a network
+
+Common in:
+
+ARP
+
+Network discovery
 
 🔁 NAT (Network Address Translation)
-Converts private IPs ↔ public IPs.
-Types: Static, Dynamic, PAT.
-Lets many devices share one public IP.
+Converts private IPs ↔ public IPs
+
+Types:
+
+Static
+
+Dynamic
+
+PAT (Port Address Translation)
+
+Purpose: Allows many devices to share one public IP
 
 🔂 Port Forwarding
-Redirects traffic to a specific internal device.
-Used for remote access (e.g., web servers, games).
+Redirects traffic to a specific internal device
+
+Used for:
+
+Remote access
+
+Web servers, game hosting, etc.
 
 🧩 Subnetting
-Breaks big networks into smaller subnets.
-Improves routing, security, IP management.
-Example:
-CIDR: 192.168.1.0/24
-Subnet Mask: 255.255.255.0
-Usable IPs: 192.168.1.1 – 192.168.1.254
-Broadcast: 192.168.1.255
+Breaks large networks into smaller subnets
 
-🔐 Why Subnet?
-✅ Reduces traffic
+Benefits:
+✅ Reduces network traffic
 ✅ Improves routing
 ✅ Adds security
 ✅ Enables VLANs
+
+🧮 Subnetting Example:
+CIDR Notation: 192.168.1.0/24
+
+Subnet Mask: 255.255.255.0
+
+Usable IPs: 192.168.1.1 – 192.168.1.254
+
+Broadcast IP: 192.168.1.255
 
 🧪 Nmap Command (Advanced Scan)
 bash
 Copy
 Edit
 nmap -T4 -A -sV -O -oN output.txt --script default -vv -p 1-1000 -sS -sT target.com
-Key Flags:
-
+🔑 Key Flags:
 -T4: Faster scan
--A: OS + version detection
--sV: Service versions
--O: OS detect
+
+-A: OS and version detection
+
+-sV: Service version detection
+
+-O: OS detection
+
 -sS: Stealth SYN scan
+
 -sT: TCP connect scan
 
---script default: Default scripts
+--script default: Runs default scripts
 
--vv: Very verbose
+-vv: Very verbose output
 
--p 1-1000: Port range
+-p 1-1000: Scans ports 1 through 1000
+
